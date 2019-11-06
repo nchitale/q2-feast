@@ -1,5 +1,6 @@
 FEAST - a scalable algorithm for quantifying the origins of complex microbial communities
 -----------------------
+[![Build Status](https://travis-ci.org/nchitale/FEAST.svg?branch=FEAST_beta)](https://travis-ci.org/nchitale/FEAST)
 
 A major challenge of analyzing the compositional structure of microbiome data is identifying its potential origins. Here, we introduce Fast Expectation-mAximization microbial Source Tracking (*FEAST*), a ready-to-use scalable framework that can simultaneously estimate the contribution of thousands of potential source environments in a timely manner, thereby helping unravel the origins of complex microbial communities. The information gained from *FEAST* may provide insight into quantifying contamination, tracking the formation of developing microbial communities, as well as distinguishing and characterizing bacteria-related health conditions. 
 For more details see Shenhav et al., Nature Methods 2019 (https://www.nature.com/articles/s41592-019-0431-x).
