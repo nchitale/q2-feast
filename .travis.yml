@@ -5,11 +5,8 @@ warnings_are_errors: false
 sudo: false
 cache: packages
 
-git:
-  quiet: true
-latex: false
-pandoc: false
-fortran: false
-
 before_install:
   - Rscript -e 'Packages <- c("Rcpp", "RcppArmadillo", "vegan", "dplyr", "reshape2", "gridExtra", "ggplot2", "ggthemes"); install.packages(Packages); lapply(Packages, library, character.only = TRUE)'
+
+env:
+  - R_KEEP_PKG_SOURCE=yes
