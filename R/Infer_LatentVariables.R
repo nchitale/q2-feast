@@ -380,8 +380,7 @@ SharedTaxa_function <- function(count_data = otus,
     all_sources_tmp <- count_data[SpecificSources_idx, ]
 
   if(all_sources_flag == 1 & specific_sources_flag == 1){
-    print("Error, please set only one flag to 1 (specific_sources_flag or all_sources_flag)")
-    break;
+    stop("Error, please set only one flag to 1 (specific_sources_flag or all_sources_flag)")
   }
   if(all_sources_flag == 1 & length(all_sources) > 1)
     agg_source_vec <- as.numeric(apply(all_sources_tmp, 2, sum))
