@@ -19,4 +19,4 @@ install:
   - conda env create -q -n test-env --file qiime2-latest-py36-linux-conda.yml
   - source activate test-env  
   - conda install -c bioconda -c conda-forge -c r bioconductor-phyloseq r-devtools r-magrittr r-dplyr r-vgam r-tidyr r-vegan r-reshape2 r-rcpp r-rcpparmadillo r-gridextra r-ggplot2 r-ggthemes
-  - Rscript -e 'devtools::install_github("cozygene/FEAST")'
+  - Rscript -e 'devtools::install_github("cozygene/FEAST", ref = "FEAST_beta")'
