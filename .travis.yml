@@ -1,6 +1,5 @@
 # reference: https://github.com/biocore/DEICODE/blob/master/.travis.yml
 
-sudo: false
 language: python
 env:
   - PYVERSION=3.5
