@@ -20,3 +20,6 @@ install:
   - sudo ln -s /bin/gzip /usr/bin/gzip
   - sudo ln -s /bin/tar /bin/gtar
   - Rscript -e 'devtools::install_github("cozygene/FEAST", ref = "FEAST_beta")'
+script:
+  - source activate test-env
+  - make test
