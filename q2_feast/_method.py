@@ -140,7 +140,7 @@ def microbialtracking(table: pd.DataFrame,
         feast_meta.to_csv(map_fp, sep='\t', header=True)
 
         # build command for FEAST
-        cmd = ['source_tracking.R',
+        cmd = ['assets/source_tracking.R',
                biom_fp,
                map_fp,
                different_sources,
