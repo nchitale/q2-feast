@@ -19,7 +19,8 @@ install:
   - conda install -c bioconda -c conda-forge -c r bioconductor-phyloseq r-devtools r-magrittr r-dplyr r-vgam r-tidyr r-vegan r-reshape2 r-rcpp r-rcpparmadillo r-gridextra r-ggplot2 r-ggthemes
   - sudo ln -s /bin/gzip /usr/bin/gzip
   - sudo ln -s /bin/tar /bin/gtar
-  - Rscript -e 'devtools::install_github("cozygene/FEAST", ref = "FEAST_beta")'
+  - Rscript -e 'devtools::install_github("cameronmartino/FEAST", ref = "FEAST_beta")'
+  # Change the above github repo to "cozygene/FEAST" once it is ready
 script:
   - source activate test-env
   - make test
