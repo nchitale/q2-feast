@@ -20,7 +20,8 @@ install:
   - sudo ln -s /bin/gzip /usr/bin/gzip
   - sudo ln -s /bin/tar /bin/gtar
   - Rscript -e 'devtools::install_github("cameronmartino/FEAST", ref = "FEAST_beta")'
-  # Change the above github repo to "cozygene/FEAST" once it is ready
+  - pip install git+https://github.com/nchitale/q2-feast.git@FEAST_beta
+  # Change the above github repos to "cozygene/FEAST" once it is ready
 script:
   - source activate test-env
   - make test
